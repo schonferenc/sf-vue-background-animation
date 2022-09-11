@@ -1,6 +1,6 @@
 {
   "name": "sf-vue-background-animation",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The component is made for vue version 3. With the help of predefined animations, we can use almost anything as a background animation.",
   "private": false,
   "author": {
@@ -22,7 +22,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rm -rf ./dist && vue-cli-service build",
-    "build-library": "rm -rf ./dist && vue-cli-service build --target lib --name sf-vue-background-animation ./src/install.js"
+    "build-library": "rm -rf ./dist && vue-cli-service build --target lib --name sf-vue-background-animation ./src/install.js",
+    "build-rollup": "rm -rf ./dist && rollup -c"
   },
   "dependencies": {
     "vue": "^3.0.0"
