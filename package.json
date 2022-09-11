@@ -1,0 +1,46 @@
+{
+  "name": "sf-vue-background-animation",
+  "version": "1.0.0",
+  "description": "The component is made for vue version 3. With the help of predefined animations, we can use almost anything as a background animation.",
+  "private": false,
+  "author": {
+    "name": "Schön Ferenc",
+    "email": "schonferenc.dev@gmail.com"
+  },
+  "repository": "https://github.com/schonferenc/sf-vue-background-animation",
+  "bugs": "https://github.com/schonferenc/sf-vue-background-animation/issues",
+  "keywords": [
+    "background",
+    "animation",
+    "vue"
+  ],
+  "license": "MIT",
+  "main": "./dist/sf-vue-background-animation.common.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "rm -rf ./dist && vue-cli-service build",
+    "build-library": "rm -rf ./dist && vue-cli-service build --target lib --name sf-vue-background-animation ./src/install.js"
+  },
+  "dependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "sass": "1.32.12",
+    "sass-loader": "^10.1.0",
+    "vue-cli-plugin-pug": "~2.0.0",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-node-resolve": "^14.0.1",
+    "rollup": "^2.79.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "core-js": "^3.6.5",
+    "vue-global-api": "^0.4.1",
+    "vue-ui-preloader": "^1.2.1"
+  }
+}
